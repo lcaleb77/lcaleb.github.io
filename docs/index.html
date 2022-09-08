@@ -1,41 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"
+<rss version="2.0"
+    xmlns:atom="http://www.w3.org/2005/Atom"
     xmlns:media="http://search.yahoo.com/mrss/"
     xmlns:g="http://schemas.google.com/pcn/2020">
-  <title>Sample News</title>
-  <id>urn:uuid:1115dd5b-c02d-4f24-b768-70b0e10fa6ec</id>
-  <updated>2020-05-30T07:30:30Z</updated>
-  <link rel="self" href="https://example.com/rss"/>
-  <entry>
-    <g:panel type="SINGLE_STORY">Panel 1</g:panel>
-    <id>urn:uuid:6b279328-d433-47ce-8a0c-d885836d4e7f</id>
-    <published>2020-05-29T14:10:00Z</published>
-    <updated>2020-12-14T05:31:00Z</updated>
-    <title>Article headline goes here in two lines</title>
-    <author>
-      <name>by John Doe</name>
-    </author>
-    <summary>
-      Summary ut enim ad minim veniam, quis nostrud exercitation ullamco
-    </summary>
-    <link href="https://example.com/news/article-1"/>
-    <media:content url="https://bit.ly/39WBpFT"/>
-    <g:article_group role="RELATED_CONTENT">
-      <entry>
-        <id>rel-item-1</id>
-        <title>Headline sed ut perspiciatis unde omnis iste natus error sit</title>
-        <link href="https://example.com/news/rel-article-1"/>
-        <summary>more related news 1</summary>
-        <media:content url="https://bit.ly/2AKljCg"/>
-      </entry>
-      <entry>
-        <id>rel-item-2</id>
-        <title>Headline sed ut perspiciatis unde omnis iste natus error sit</title>
-        <link href="https://example.com/news/rel-article-2"/>
-        <summary>more related news 2</summary>
-        <media:content url="https://bit.ly/3fqUReX"/>
-      </entry>
+  <channel>
+    <title>Sample News</title>
+    <link>https://example.com/</link>
+    <atom:link rel="self" href="https://example.com/rss"/>
+    <item>
+      <g:panel type="RUNDOWN">Rundown 1</g:panel>
+      <g:panel_title>Sample Rundown</g:panel_title>
+      <guid isPermaLink="false">urn:uuid:6b279328-d433-47ce-8a0c-d885836d4e7e</guid>
+      <pubDate>Fri, 29 May 2020 14:10:00 GMT</pubDate>
+      <atom:updated>2020-05-30T07:30:30Z</atom:updated>
+      <g:article_group role="RUNDOWN">
+      <item>
+        <guid>urn:uuid:b0826782-dbd8-4877-9560-192a831663c3</guid>
+        <title>Headline 1 sed ut perspiciatis unde omnis iste natus</title>
+        <link>https://example.com/news/rel-article-1</link>
+        <author><name>By Author 1</name></author>
+        <g:overline>Overline 1</g:overline>
+        <media:content url="https://example.com/img1.png"></media:content>
+      </item>
+      <item>
+        <guid>urn:uuid:f48c57fb-2b8d-4156-a52d-cd262d826095</guid>
+        <title>Headline 2 sed ut perspiciatis unde omnis iste natus</title>
+        <link>https://example.com/news/rel-article-2</link>
+        <author><name>By Author 2</name></author>
+        <g:overline>Overline 2</g:overline>
+        <media:content url="https://example.com/img2.png"></media:content>
+      </item>
+      <item>
+        <guid>urn:uuid:6ab4e6d8-327c-4c07-a9bc-b647f8f6c891</guid>
+        <title>Headline 3 sed ut perspiciatis unde omnis iste natus</title>
+        <link>https://example.com/news/rel-article-3</link>
+        <author><name>By Author 3</name></author>
+        <g:overline>Overline 3</g:overline>
+        <media:content url="https://example.com/img3.png"></media:content>
+      </item>
     </g:article_group>
-  </entry>
-</feed>
-
+    </item>
+  </channel>
+</rss>
